@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>Container Name</Name>
+  <Description>Description here</Description
+  <Registry>Docker Hub URL</Registry>
+  <Repository>dockerhub/repo</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>UID</Name>
+      <Value>2</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish>
+      <Port>
+        <HostPort>AddHostPort</HostPort>
+        <ContainerPort>AddContainerPort</ContainerPort>
+        <Protocol>tcp/udp?</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/*</HostDir>
+      <ContainerDir>SpecifyContainerDirectory</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  <WebUI>http://[iP]:[PORT:80]/</WebUI>
+  <Banner>Some Banner</Banner>
+  <Icon>some icon</Icon>
+  <ExtraParams></ExtraParams>
+  </Data>
