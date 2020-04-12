@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
   <Name>Container Name</Name>
-  <Description>Description here</Description
+  <Description>Description here</Description>
   <Registry>Docker Hub URL</Registry>
   <Repository>dockerhub/repo</Repository>
   <BindTime>true</BindTime>
@@ -33,3 +33,4 @@
   <Icon>some icon</Icon>
   <ExtraParams></ExtraParams>
   </Data>
+</container>
