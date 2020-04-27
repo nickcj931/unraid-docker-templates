@@ -3,7 +3,7 @@
   <Beta>False</Beta>
   <Name>adguardhome</Name>
   <Description>
-    AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that
+    AdGuard Home is a network-wide software for blocking ads and tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that
   </Description>
   <Registry>https://hub.docker.com/r/adguard/adguardhome</Registry>
   <Repository>adguard/adguardhome</Repository>
