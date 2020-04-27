@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
   <Name>adguardhome</Name>
-  <Repository>adguard/adguardhome</Repository>
-  <Description>AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that</Description>
+  <Description>
+    AdGuard Home is a network-wide software for blocking ads & tracking. After you set it up, it'll cover ALL your home devices, and you don't need any client-side software for that
+  </Description>
   <Registry>https://hub.docker.com/r/adguard/adguardhome</Registry>
+  <Repository>adguard/adguardhome</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -71,9 +73,9 @@
       <ContainerDir>/opt/adguardhome/conf</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+  </Data>
   <WebUI>http://[iP]:[PORT:80]/</WebUI>
   <Banner>https://cdn.adguard.com/public/Adguard/Common/adguard_home.svg</Banner>
   <Icon>https://secure.gravatar.com/avatar/c04ff98f88bc9d2cebbbd593e8174ddd.jpg</Icon>
   <ExtraParams></ExtraParams>
-  </Data>
 </container>
