@@ -58,6 +58,12 @@
         <ContainerPort>3000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Description>WebUI</Description>
+        <Protocol>tcp</Protocol>
+      </Port>      
     </Publish>
   </Networking>
   <Data>
