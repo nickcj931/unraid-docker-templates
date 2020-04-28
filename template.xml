@@ -28,9 +28,9 @@
       <ContainerDir>SpecifyContainerDirectory</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-  <WebUI>http://[iP]:[PORT:80]/</WebUI>
+  </Data>  
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>Some Banner</Banner>
   <Icon>some icon</Icon>
   <ExtraParams></ExtraParams>
-  </Data>
-</container>
+</Container>

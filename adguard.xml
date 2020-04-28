@@ -61,12 +61,12 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/adguardhome/workdir</HostDir>
+      <HostDir>/mnt/user/appdata/adguardhome/workdir</HostDir>
       <ContainerDir>/opt/adguardhome/work</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/adguardhome/confdir</HostDir>
+      <HostDir>/mnt/user/appdata/adguardhome/confdir</HostDir>
       <ContainerDir>/opt/adguardhome/conf</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
