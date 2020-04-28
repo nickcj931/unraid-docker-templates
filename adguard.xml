@@ -39,8 +39,8 @@
         <Protocol>udp</Protocol>
       </Port>
       <Port>
-        <HostPort>80</HostPort>
-        <ContainerPort>80</ContainerPort>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
       <Port>
@@ -57,13 +57,7 @@
         <HostPort>3000</HostPort>
         <ContainerPort>3000</ContainerPort>
         <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Description>WebUI</Description>
-        <Protocol>tcp</Protocol>
-      </Port>      
+      </Port>    
     </Publish>
   </Networking>
   <Data>
@@ -78,6 +72,13 @@
       <Mode>rw</Mode>
     </Volume>
   </Data>
+  <Config Name="DNS Listening port TCP" Target="53" Default="53" Mode="tcp" Description="DNS TCP" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
+  <Config Name="DNS Listening port UDP" Target="53" Default="53" Mode="UDP" Description="DNS UDP" Type="Port" Display="advanced" Required="true" Mask="false">53</Config>
+  <Config Name="Port: 68 TCP" Target="68" Default="68" Mode="TCP" Description="68 TCP" Type="Port" Display="advanced" Required="true" Mask="false">68</Config>
+  <Config Name="Port: 68 UDP" Target="68" Default="68" Mode="UDP" Description="68 UDP" Type="Port" Display="advanced" Required="true" Mask="false">68</Config>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="TCP" Description="8080 WebUI" Type="Port" Display="advanced" Required="true" Mask="false">8080</Config>
+  <Config Name="Config Dir" Target="/opt/adguardhome/work" Default="/mnt/user/appdata/adguardhome/workdir" Mode="rw" Description="Container Path: /opt/adguardhome/work" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguardhome/workdir</Config>
+  <Config Name="Config Dir" Target="/opt/adguardhome/conf" Default="/mnt/user/appdata/adguardhome/confdir" Mode="rw" Description="Container Path: /opt/adguardhome/conf" Type="Path" Display="advanced" Required="true" Mask="false">/mnt/user/appdata/adguardhome/confdir</Config>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>https://cdn.adguard.com/public/Adguard/Common/adguard_home.svg</Banner>
   <Icon>https://secure.gravatar.com/avatar/c04ff98f88bc9d2cebbbd593e8174ddd.jpg</Icon>
